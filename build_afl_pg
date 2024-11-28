@@ -1,0 +1,5 @@
+#! /bin/bash
+
+docker build . -t afl_pg
+# set ramdisk for diminishing file I/O
+docker run -it --name afl_pg --tmpfs /ramdisk:exec afl_pg

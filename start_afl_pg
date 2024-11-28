@@ -1,0 +1,5 @@
+#! /bin/bash
+
+echo "start afl_pg"
+docker start afl_pg
+docker exec -it afl_pg bash
